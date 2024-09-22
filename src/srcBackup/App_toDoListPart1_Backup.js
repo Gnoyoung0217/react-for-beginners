@@ -6,7 +6,7 @@ function App() {
   const onChange = (e) => setToDo(e.target.value);
   const onSubmit = (e) => {
     e.preventDefault(); // form태그의 onSubmit 이벤트 방지
-    if ( toDo == "" ) {
+    if (toDo == "") {
       return;
     }
     setToDos(currentArr => [toDo, ...currentArr]);
@@ -23,7 +23,7 @@ function App() {
     <ul>
       {toDos.map((toDo, idx) => (
         <li key={idx}>{toDo.toUpperCase()}</li>
-        ))}
+      ))}
     </ul>
   </div>;
 }

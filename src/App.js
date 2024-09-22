@@ -9,13 +9,13 @@ import Detail from "./routes/Detail";
 
 function App() {
   return (
-  <Router>
-    <Routes>
-      <Route path="/" element={<Home />}></Route>
-      <Route path="/movie" element={<Detail />}></Route>
-      <Route path="/hello" element={<h1>Hello</h1>}></Route> 
-    </Routes>
-  </Router>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/movie" element={<Detail />}></Route>
+        <Route path="/hello" element={<h1>Hello</h1>}></Route>
+      </Routes>
+    </Router>
   );
 }
 
